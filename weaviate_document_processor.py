@@ -114,7 +114,6 @@ def process_and_query_document(file_path, question, openai_api_key, weaviate_url
     except Exception as e:
         print(f"Error during chat: {e}")
 
-# Example usage:
 # Example Usage
 if __name__ == "__main__":
     # Replace these variables with your actual values
