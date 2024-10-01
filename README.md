@@ -29,21 +29,25 @@ The `chroma_document_processor.py` script processes documents in PDF, CSV, or JS
    git clone https://github.com/yourusername/document-processors.git
    cd document-processors
 2.Install the required dependencies:
+```bash
 pip install -r requirements.txt
-
+ ```
 3.Create an environment variable for your OpenAI API key:
+```
 export OPENAI_API_KEY="your-openai-api-key"
-
+```
 
 4.Usage:
 a)Place the document (PDF, CSV, JSON) you want to process in the project directory.
-b)Open the chroma_document_processor.py script and edit the following lines to match your file path and question:
+b)Open the ```chroma_document_processor.py``` script and edit the following lines to match your file path and question:
+```
 file_path = "your_document.pdf"  # Replace with your actual document path
 question = "What is the document about?"
-
+```
 5.Run the script:
+```
 python chroma_document_processor.py
-
+```
 6.Example:
 If you have a PDF document named report.pdf and want to ask, "What is the main topic of the report?", modify the file_path and question variables and run the script.
 The script will:
@@ -57,30 +61,37 @@ The script will:
 
 
 ## Weaviate Document Processor
-###Overview
-The weaviate_document_processor.py script is similar to the Chroma processor but uses Weaviate, a cloud-native vector database, to store document embeddings and query responses. It allows for scalable and flexible querying with support for multi-modal data.
+### Overview
+The ```weaviate_document_processor.py```script is similar to the Chroma processor but uses Weaviate, a cloud-native vector database, to store document embeddings and query responses. It allows for scalable and flexible querying with support for multi-modal data.
 
 ### Installation
 1.Ensure that you have Weaviate running, either locally (e.g., via Docker) or via Weaviate Cloud:
 
 2.To run Weaviate locally using Docker, use the following command:
+```
 docker run -d -p 8080:8080 semitechnologies/weaviate:latest
-
+```
 3.Install the necessary Python dependencies:
+```
 pip install -r requirements.txt
-
+```
 4.Export your OpenAI API key and set up the Weaviate endpoint:
+```
 export OPENAI_API_KEY="your-openai-api-key"
 export WEAVIATE_ENDPOINT="http://localhost:8080"  # Update this if using Weaviate Cloud
-
+```
 5.Usage:
  1)Place your document (PDF, CSV, or JSON) in the project directory.
  2)Open the weaviate_document_processor.py script and edit the file_path and question variables:
+ ```
   file_path = "your_document.pdf"  # Replace with your actual document path
    question = "What is the main focus of this document?"
-   Run the script:
-   python weaviate_document_processor.py
-6.Example:
+```
+6.Run the script:
+```
+python weaviate_document_processor.py
+```
+7.Example:
 If you're using a CSV file named financial_data.csv, and you want to know, "What are the key trends in this financial data?", update the file path and question variables. Running the script will:
 1)Load and split the document into chunks.
 2)Store the document embeddings in Weaviate.
