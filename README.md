@@ -32,7 +32,7 @@ The `chroma_document_processor.py` script processes documents in PDF, CSV, or JS
 ```bash
 pip install -r requirements.txt
  ```
-3.Create an environment variable for your OpenAI API key:
+3. Create an environment variable for your OpenAI API key:
 ```
 export OPENAI_API_KEY="your-openai-api-key"
 ```
@@ -98,18 +98,19 @@ If you're using a CSV file named financial_data.csv, and you want to know, "What
 3)Query the document using GPT-based language models.
 4)Store the LLM responses in Weaviate and verify the results.
 ### General Notes
-Chroma: This vector store is lightweight and well-suited for local storage of document embeddings. It’s easy to set up and persist embeddings on disk.
-Weaviate: This vector store is more scalable and is designed for enterprise-grade solutions with robust features like cloud-based storage, multi-modal data support, and customizable schemas.
+```Chroma```: This vector store is lightweight and well-suited for local storage of document embeddings. It’s easy to set up and persist embeddings on disk.
+```Weaviate```: This vector store is more scalable and is designed for enterprise-grade solutions with robust features like cloud-based storage, multi-modal data support, and customizable schemas.
 You can choose either script depending on your project's needs. Both scripts allow easy document querying and storage using the OpenAI API.
 
 ### Dependencies
-Python 3.8+
-langchain_community
-langchain_openai
-langchain_chroma
-langchain_weaviate
-OpenAI API key
+```Python 3.8+```
+```langchain_community```
+```langchain_openai```
+```langchain_chroma```
+```langchain_weaviate```
+```OpenAI API key```
+
 ### To-Do
-Extend the support for more document formats.
-Add additional configurations for document processing.
-Optimize the chunking strategy for larger documents.
+1. Extend the support for more document formats.
+2. Add additional configurations for document processing.
+3. Optimize the chunking strategy for larger documents.
