@@ -28,7 +28,7 @@ The `chroma_document_processor.py` script processes documents in PDF, CSV, or JS
    ```bash
    git clone https://github.com/yourusername/document-processors.git
    cd document-processors
-2.Install the required dependencies:
+2. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
  ```
@@ -37,18 +37,18 @@ pip install -r requirements.txt
 export OPENAI_API_KEY="your-openai-api-key"
 ```
 
-4.Usage:
+4. Usage:
 a)Place the document (PDF, CSV, JSON) you want to process in the project directory.
 b)Open the ```chroma_document_processor.py``` script and edit the following lines to match your file path and question:
 ```
 file_path = "your_document.pdf"  # Replace with your actual document path
 question = "What is the document about?"
 ```
-5.Run the script:
+5. Run the script:
 ```
 python chroma_document_processor.py
 ```
-6.Example:
+6. Example:
 If you have a PDF document named report.pdf and want to ask, "What is the main topic of the report?", modify the file_path and question variables and run the script.
 The script will:
 1)Load and split the document into chunks.
@@ -80,18 +80,18 @@ pip install -r requirements.txt
 export OPENAI_API_KEY="your-openai-api-key"
 export WEAVIATE_ENDPOINT="http://localhost:8080"  # Update this if using Weaviate Cloud
 ```
-5.Usage:
+5. Usage:
  1)Place your document (PDF, CSV, or JSON) in the project directory.
  2)Open the weaviate_document_processor.py script and edit the file_path and question variables:
  ```
   file_path = "your_document.pdf"  # Replace with your actual document path
    question = "What is the main focus of this document?"
 ```
-6.Run the script:
+6. Run the script:
 ```
 python weaviate_document_processor.py
 ```
-7.Example:
+7. Example:
 If you're using a CSV file named financial_data.csv, and you want to know, "What are the key trends in this financial data?", update the file path and question variables. Running the script will:
 1)Load and split the document into chunks.
 2)Store the document embeddings in Weaviate.
