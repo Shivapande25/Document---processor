@@ -95,7 +95,7 @@ def process_and_query_document(file_path, question, openai_api_key, chroma_persi
 if __name__ == "__main__":
     # Example usage
     file_path = "your_document.pdf"  # Replace with your actual document path
-    question = "What is the document about?"
+    question = "your question"
     openai_api_key = "your-openai-api-key"  # Replace with your actual OpenAI API key
     chroma_persist_directory = "chroma_db"  # Directory to store Chroma database
 
