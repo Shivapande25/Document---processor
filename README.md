@@ -1,6 +1,6 @@
 # Document---processor
 A repository for document processing and querying with Chroma and Weaviate.
-# Document Processing and Querying with Chroma and Weaviate
+## Document Processing and Querying with Chroma and Weaviate
 
 This repository contains two scripts for processing documents (PDF, CSV, JSON) and querying them using two different vector store backends: **Chroma** and **Weaviate**. Both scripts utilize OpenAI's language models to generate responses based on document content.
 
